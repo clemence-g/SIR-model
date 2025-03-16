@@ -132,22 +132,22 @@ def graph(p1p2, beta, gamma, mu, k):
     plt.grid()
     plt.show()
            
-#graph(p1p2=0.5, beta=0.5, gamma=0.1, mu=0.02, k=0) 
-#graph(p1p2=0.7, beta=0.5, gamma=0.1, mu=0.02, k=1)
-#graph(p1p2=0.8, beta=0.5, gamma=0.1, mu=0.02, k=2)
-#graph(p1p2=0.9, beta=0.5, gamma=0.1, mu=0.02, k=3)
+graph(p1p2=0.5, beta=0.5, gamma=0.1, mu=0.02, k=0) 
+graph(p1p2=0.7, beta=0.5, gamma=0.1, mu=0.02, k=1)
+graph(p1p2=0.8, beta=0.5, gamma=0.1, mu=0.02, k=2)
+graph(p1p2=0.9, beta=0.5, gamma=0.1, mu=0.02, k=3)
 
 # First type of disease    
 graph(p1p2=0.7, beta=0.5, gamma=0.1, mu=0.02, k=5)
 
 # Second type      
-#graph(p1p2=0, beta=0.8, gamma=0.1, mu=0.5, k=3)
+graph(p1p2=0, beta=0.8, gamma=0.1, mu=0.5, k=3)
 
 # Third type      
-#graph(p1p2=0, beta=0.8, gamma=0.1, mu=0.01, k=4)
+graph(p1p2=0, beta=0.8, gamma=0.1, mu=0.01, k=4)
 
 # Fourth type      
-#graph(p1p2=0, beta=0.1, gamma=0.1, mu=0.01, k=5)
+graph(p1p2=0, beta=0.1, gamma=0.1, mu=0.01, k=5)
 
 # Fifth type      
-#graph(p1p2=0, beta=0.1, gamma=0.5, mu=0.01, k=6)
+graph(p1p2=0, beta=0.1, gamma=0.5, mu=0.01, k=6)
