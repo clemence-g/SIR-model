@@ -57,9 +57,9 @@ def ddy(i_last, x, y):
     
     if y < 99 and y > 0:
         d2y = i_last[x,y+1] + i_last[x,y-1] - 2*i_last[x,y]
-    if y == 99:
+    elif y == 99:
         d2y = i_last[x,y-1] - 2*i_last[x,y]
-    if y == 0:
+    elif y == 0:
         d2y = i_last[x,y+1] - 2*i_last[x,y]
     
     return d2y
@@ -131,13 +131,13 @@ def euler(derivatives, beta, gamma, mu, t0, tf, h):
         # Shows "time" passing as matrices are created
         if t == 100:
             print("It takes a bit time to animate all this...")
-        if t == 250:
+        elif t == 250:
             print("Half way through.")
-        if t == 400:
+        elif t == 400:
             print("Just a little more...")
-        if t == 450:
+        elif t == 450:
             print("Almost there !")
-        if t == 490:
+        elif t == 490:
             print("Are you ready ?")
         else:
             print("t =", t)
@@ -153,7 +153,7 @@ def euler(derivatives, beta, gamma, mu, t0, tf, h):
             s[50,] = np.zeros(100)
             i[50,] = np.zeros(100)
             
-        if answer == 2:             # Having a wall with a door
+        elif answer == 2:             # Having a wall with a door
             s[50,:69] = np.zeros(69)
             s[50,71:] = np.zeros(29)
             i[50,:69] = np.zeros(69)
